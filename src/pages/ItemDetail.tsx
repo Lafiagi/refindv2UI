@@ -89,7 +89,7 @@ export default function ItemDetail() {
       try {
         await likeItem(item.id, item.type);
         // Optimistic update
-        setItem(prev => ({
+        setItem((prev: any) => ({
           ...prev,
           is_liked: !prev.is_liked,
           likes_count: prev.is_liked ? prev.likes_count - 1 : prev.likes_count + 1
@@ -174,7 +174,7 @@ export default function ItemDetail() {
                     src={images[activeImageIndex].image}
                     alt={item.title}
                     className="w-full h-full object-cover"
-                    transformations={imagePresets.itemDetail}
+                    transformations={imagePresets.itemDetail as any}
                   />
                 ) : (
                   <div className="w-full h-full flex items-center justify-center text-slate-400">

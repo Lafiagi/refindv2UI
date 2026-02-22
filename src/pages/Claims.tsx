@@ -9,11 +9,9 @@ import {
   ChatBubbleLeftRightIcon,
   ClockIcon,
   CheckCircleIcon,
-  ExclamationTriangleIcon,
   PhotoIcon,
   DevicePhoneMobileIcon,
   XCircleIcon,
-  EyeIcon,
   ChevronDownIcon
 } from '@heroicons/react/24/outline';
 
@@ -55,7 +53,7 @@ export default function Claims() {
     }
   };
 
-  const renderClaimCard = (claim: any, showItemInfo: boolean = true, isOwner: boolean = false) => {
+  const renderClaimCard = (claim: any, _showItemInfo: boolean = true, isOwner: boolean = false) => {
     const item = claim.lost_item || claim.found_item;
     const itemType = claim.lost_item ? 'lost' : 'found';
 
@@ -133,7 +131,7 @@ export default function Claims() {
                   {expandedSections[`${claim.id}-evidence`] && (
                     <div className="p-4 bg-slate-50 grid grid-cols-3 gap-2 border-t border-slate-100">
                       {claim.evidence_images.map((img: string, i: number) => (
-                        <ZoomableImage key={i} src={img} alt="Evidence" className="rounded-lg aspect-square object-cover border border-slate-200" transformations={imagePresets.evidence} />
+                        <ZoomableImage key={i} src={img} alt="Evidence" className="rounded-lg aspect-square object-cover border border-slate-200" transformations={imagePresets.evidence as any} />
                       ))}
                     </div>
                   )}

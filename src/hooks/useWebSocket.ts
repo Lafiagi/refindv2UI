@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { useChatStore } from '../store/chatStore';
-import type { Message } from '../store/chatStore';
 
 export function useWebSocket(conversationId: number | null) {
   const wsRef = useRef<WebSocket | null>(null);

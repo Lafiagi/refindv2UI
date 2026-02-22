@@ -5,7 +5,7 @@ import { useItemsStore } from '../../store/itemsStore';
 import type { Item } from '../../store/itemsStore';
 import { useState } from 'react';
 import ZoomableImage from '../Images/ZoomableImage';
-import { buildCloudinaryUrl, imagePresets } from '../../utils/cloudinary';
+import { imagePresets } from '../../utils/cloudinary';
 
 interface ItemCardProps {
   item: Item;
@@ -46,8 +46,8 @@ export default function ItemCard({ item, type }: ItemCardProps) {
               src={item.primary_image}
               alt={item.title}
               className="w-full h-48 object-cover rounded-lg mb-4"
-              transformations={imagePresets.itemCard}
-              zoomTransformations={imagePresets.zoomable}
+              transformations={imagePresets.itemCard as any}
+              zoomTransformations={imagePresets.zoomable as any}
             />
           </div>
         ) : (

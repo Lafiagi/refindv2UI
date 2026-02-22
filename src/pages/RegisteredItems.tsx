@@ -5,7 +5,6 @@ import {
     ExclamationTriangleIcon,
     ShieldCheckIcon,
     TagIcon,
-    ShoppingBagIcon,
     CurrencyDollarIcon,
     CalendarIcon,
     PhotoIcon,
