@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative overflow-hidden pt-16 pb-24 lg:pt-32 lg:pb-40">
+      <section className="relative overflow-hidden pt-8 pb-24 lg:pt-16 lg:pb-40">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
             <div className="flex-1 text-center lg:text-left">
@@ -202,9 +202,9 @@ export default function Home() {
                 <div className="relative group perspective-1000">
                   <div className="absolute -inset-4 bg-orange-500 rounded-full blur-3xl opacity-50"></div>
                   <img
-                    src="https://cdn.dribbble.com/users/1615584/screenshots/15710323/media/8939c07df74567290539f1c7d2422c57.png?resize=800x600&vertical=center"
+                    src="https://images.unsplash.com/photo-1584438784894-089d6a62b8fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
                     alt="App Mockup"
-                    className="relative w-72 lg:w-[360px] drop-shadow-2xl rounded-3xl transform rotate-[-5deg] group-hover:rotate-0 transition-transform duration-500"
+                    className="relative w-72 lg:w-[400px] drop-shadow-2xl rounded-3xl transform rotate-[-5deg] group-hover:rotate-0 transition-transform duration-500"
                   />
                 </div>
               </div>
