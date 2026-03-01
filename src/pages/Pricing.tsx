@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Check } from 'lucide-react';
 
 export default function Pricing() {
@@ -20,7 +19,7 @@ export default function Pricing() {
       name: 'Pro',
       price: '$4.99',
       period: '/month',
-      description: 'For serious finders and losers',
+      description: 'For serious users',
       features: [
         'Unlimited lost item listings',
         'Advanced search filters',
@@ -51,20 +50,8 @@ export default function Pricing() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">R</span>
-            </div>
-            <span className="font-bold text-xl">Refind</span>
-          </Link>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 text-center">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-10 text-center">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
           Simple, Transparent Pricing
         </h1>
@@ -81,7 +68,7 @@ export default function Pricing() {
               key={idx}
               className={`rounded-lg p-8 ${
                 plan.highlighted
-                  ? 'bg-primary-500 text-white ring-2 ring-primary-500 transform scale-105'
+                  ? 'bg-gradient-to-br from-orange-600 to-rose-600 text-white transform scale-105'
                   : 'bg-white border border-gray-200'
               }`}
             >

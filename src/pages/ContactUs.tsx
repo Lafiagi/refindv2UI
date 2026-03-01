@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { useState } from 'react';
 
@@ -76,7 +75,7 @@ export default function ContactUs() {
             <div className="flex items-start space-x-4">
               <Mail className="w-6 h-6 text-primary-500 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Email</h3>
+                <h3 className="font-semibold text-gray-900">Email</h3>
                 <a href="mailto:support@refind.com" className="text-gray-600 hover:text-primary-500">
                   support@refind.com
                 </a>
@@ -85,7 +84,7 @@ export default function ContactUs() {
             <div className="flex items-start space-x-4">
               <Phone className="w-6 h-6 text-primary-500 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Phone</h3>
+                <h3 className="font-semibold text-gray-900">Phone</h3>
                 <a href="tel:+1234567890" className="text-gray-600 hover:text-primary-500">
                   +1 (234) 567-890
                 </a>
@@ -94,7 +93,7 @@ export default function ContactUs() {
             <div className="flex items-start space-x-4">
               <MapPin className="w-6 h-6 text-primary-500 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Address</h3>
+                <h3 className="font-semibold text-gray-900">Address</h3>
                 <p className="text-gray-600">
                   123 Main Street<br />
                   San Francisco, CA 94105

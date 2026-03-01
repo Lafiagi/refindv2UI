@@ -34,12 +34,14 @@ import News from './pages/News'
 import Support from './pages/Support'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import TermsAndConditions from './pages/TermsAndConditions'
+import ScrollToTop from './components/ScrollToTop'
 
 export default function App() {
 	return (
 		<BrowserRouter>
 			<Toaster position="top-right" />
 			<Navbar />
+			<ScrollToTop/>
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/login" element={<Login />} />

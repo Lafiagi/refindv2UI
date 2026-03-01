@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-gray-900 text-white mt-16 border-t border-gray-800">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -51,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-8 border-t border-gray-800 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between text-sm text-gray-500">
-          <p className="text-center sm:text-left">© 2024 Refind. All rights reserved.</p>
+          <p className="text-center sm:text-left">© {year} Refind. All rights reserved.</p>
           <div className="flex space-x-4 justify-center sm:justify-end w-full sm:w-auto">
             <Link to="https://facebook.com" className="hover:text-white">Facebook</Link>
             <Link to="https://twitter.com" className="hover:text-white">Twitter</Link>

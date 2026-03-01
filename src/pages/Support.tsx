@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { HelpCircle, Mail, Phone, FileText } from 'lucide-react';
 
 export default function Support() {
@@ -61,20 +60,8 @@ export default function Support() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">R</span>
-            </div>
-            <span className="font-bold text-xl">Refind</span>
-          </Link>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
           Support Center
         </h1>
@@ -84,17 +71,16 @@ export default function Support() {
       </div>
 
       {/* Support Channels */}
-      <div className="bg-gray-50 py-16">
+      <div className="pb-4">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-12">Get Help</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {supportChannels.map((channel, idx) => {
               const Icon = channel.icon;
               return (
                 <a
                   key={idx}
                   href={channel.link}
-                  className="bg-white p-8 rounded-lg border border-gray-200 hover:border-primary-500 hover:shadow-lg transition-all"
+                  className="bg-white p-8 rounded-lg border border-gray-200 hover:bg-gray-100 hover:border-gray-300 hover:scale-[1.02] transition-all"
                 >
                   <Icon className="w-8 h-8 text-primary-500 mb-4" />
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">{channel.title}</h3>
