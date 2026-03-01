@@ -12,10 +12,10 @@ export default function ProtectedRoute({ children }: ProtectedRouteProps) {
   const location = useLocation();
 
 
-  // if (!isAuthenticated) {
-  //   // Redirect to login with the current location as redirect parameter
-  //   return <Navigate to={`/login?redirect=${encodeURIComponent(location.pathname)}`} replace />;
-  // }
+  if (!isAuthenticated) {
+    // Redirect to login with the current location as redirect parameter
+    return <Navigate to={`/login?redirect=${encodeURIComponent(location.pathname)}`} replace />;
+  }
 
   return <>{children}</>;
 }
