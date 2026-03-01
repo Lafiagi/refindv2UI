@@ -104,7 +104,7 @@ export default function ItemsList() {
             <Link
               to="/items?type=found"
               className={`px-8 py-3 rounded-xl text-sm font-bold transition-all duration-200 ${type === 'found'
-                  ? 'bg-blue-500 text-white shadow-md'
+                  ?  'bg-orange-500 text-white shadow-md'
                   : 'text-slate-500 hover:text-slate-900 hover:bg-slate-50'
                 }`}
             >
@@ -263,7 +263,7 @@ export default function ItemsList() {
           <div className="card text-center py-12">
             <p className="text-gray-500 text-lg mb-4">No items found</p>
             <p className="text-gray-400 mb-6">Try adjusting your search or filters</p>
-            <Link to={type === 'lost' ? '/items/report/lost' : '/items/report/found'} className="btn-primary">
+            <Link to={type === 'lost' ? '/items/report/lost' : '/items/report/found'} className="btn-primary max-w-[300px] mx-auto ">
               Report {type === 'lost' ? 'Lost' : 'Found'} Item
             </Link>
           </div>

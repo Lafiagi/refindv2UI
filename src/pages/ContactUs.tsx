@@ -58,20 +58,9 @@ export default function ContactUs() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">R</span>
-            </div>
-            <span className="font-bold text-xl">Refind</span>
-          </Link>
-        </div>
-      </nav>
 
       {/* Hero Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
           Get in Touch
         </h1>
@@ -81,9 +70,9 @@ export default function ContactUs() {
       </div>
 
       {/* Contact Info */}
-      <div className="bg-gray-50 py-16 sm:py-24">
+      <div className="bg-gray-50 py-16 sm:py-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 ">
             <div className="flex items-start space-x-4">
               <Mail className="w-6 h-6 text-primary-500 flex-shrink-0 mt-1" />
               <div>

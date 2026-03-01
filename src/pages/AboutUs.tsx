@@ -3,30 +3,18 @@ import { Link } from 'react-router-dom';
 export default function AboutUs() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">R</span>
-            </div>
-            <span className="font-bold text-xl">Refind</span>
-          </Link>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
-        <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        {/* <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
           About Refind
-        </h1>
-        <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-          Refind is revolutionizing the way people reconnect with their lost belongings. We believe that everyone deserves a second chance to find what matters to them.
+        </h1> */}
+        <p className="text-xl text-gray-600 leading-relaxed ">
+          Refind is revolutionizing the way people reconnect with their lost belongings. <br /> We believe that everyone deserves a second chance to find what matters to them.
         </p>
       </div>
 
       {/* Mission Section */}
-      <div className="bg-gray-50 py-16 sm:py-24">
+      <div className="bg-gray-50 pb-10 sm:pb-10">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-4">
@@ -39,7 +27,7 @@ export default function AboutUs() {
       </div>
 
       {/* Values Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 ">
         <h2 className="text-3xl font-bold text-gray-900 mb-12">Our Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -70,7 +58,7 @@ export default function AboutUs() {
       </div>
 
       {/* CTA Section */}
-      <div className="bg-primary-500 text-white py-16">
+      <div className=" py-16 bg-gradient-to-br from-orange-600 to-rose-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to find what you're looking for?</h2>
           <Link

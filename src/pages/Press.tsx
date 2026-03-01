@@ -30,20 +30,8 @@ export default function Press() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      {/* Navigation */}
-      <nav className="bg-white border-b border-gray-200">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center">
-          <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 bg-primary-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">R</span>
-            </div>
-            <span className="font-bold text-xl">Refind</span>
-          </Link>
-        </div>
-      </nav>
-
       {/* Hero Section */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-10">
         <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
           Press Center
         </h1>
@@ -53,7 +41,7 @@ export default function Press() {
       </div>
 
       {/* Press Contact */}
-      <div className="bg-primary-50 border-l-4 border-primary-500 py-8 px-6 mb-16 mx-4 sm:mx-auto max-w-4xl rounded">
+      <div className="bg-primary-50 border-l-4 border-primary-500 py-8 px-6 mb-16 sm:mx-auto max-w-4xl rounded">
         <h3 className="font-semibold text-gray-900 mb-2">For Media Inquiries</h3>
         <p className="text-gray-600">
           Contact our press team at{' '}
